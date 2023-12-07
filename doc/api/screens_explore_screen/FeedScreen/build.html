@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="description" content="API docs for the build method from the FeedScreen class, for the Dart programming language.">
+  <title>build method - FeedScreen class - explore_screen library - Dart API</title>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../../static-assets/github.css?v1">
+  <link rel="stylesheet" href="../../static-assets/styles.css?v1">
+  <link rel="icon" href="../../static-assets/favicon.png?v1">
+
+  
+</head>
+
+
+<body data-base-href="../../" data-using-base-href="false" class="light-theme">
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <span id="sidenav-left-toggle" class="material-symbols-outlined" role="button" tabindex="0">menu</span>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="../../index.html">Sportzy</a></li>
+    <li><a href="../../screens_explore_screen/screens_explore_screen-library.html">explore_screen</a></li>
+    <li><a href="../../screens_explore_screen/FeedScreen-class.html">FeedScreen</a></li>
+    <li class="self-crumb">build method</li>
+  </ol>
+  <div class="self-name">build</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+  <div class="toggle" id="theme-button">
+    <label for="theme">
+      <input type="checkbox" id="theme" value="light-theme">
+      <span id="dark-theme-button" class="material-symbols-outlined">
+        brightness_4
+      </span>
+      <span id="light-theme-button" class="material-symbols-outlined">
+        brightness_5
+      </span>
+    </label>
+  </div>
+</header>
+<main>
+
+  <div
+      id="dartdoc-main-content"
+      class="main-content"
+      data-above-sidebar="screens_explore_screen&#47;FeedScreen-class-sidebar.html"
+      data-below-sidebar="">
+      <div>
+<h1><span class="kind-method">build</span> method 
+</h1></div>
+
+    <section class="multi-line-signature">
+      
+  <div>
+    <ol class="annotation-list">
+        <li>@<a href="https://api.flutter.dev/flutter/dart-core/override-constant.html">override</a></li>
+    </ol>
+  </div>
+
+<span class="returntype"><a href="https://api.flutter.dev/flutter/widgets/Widget-class.html">Widget</a></span>
+<span class="name ">build</span>(<wbr><ol class="parameter-list"><li><span class="parameter" id="build-param-context"><span class="type-annotation"><a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a></span> <span class="parameter-name">context</span></span></li>
+</ol>)
+
+      <div class="features"><span class="feature">override</span></div>
+
+    </section>
+    
+<section class="desc markdown">
+  <p>Describes the part of the user interface represented by this widget.</p>
+<p>The framework calls this method when this widget is inserted into the tree
+in a given <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a> and when the dependencies of this widget change
+(e.g., an <a href="https://api.flutter.dev/flutter/widgets/InheritedWidget-class.html">InheritedWidget</a> referenced by this widget changes). This
+method can potentially be called in every frame and should not have any side
+effects beyond building a widget.</p>
+<p>The framework replaces the subtree below this widget with the widget
+returned by this method, either by updating the existing subtree or by
+removing the subtree and inflating a new subtree, depending on whether the
+widget returned by this method can update the root of the existing
+subtree, as determined by calling <a href="https://api.flutter.dev/flutter/widgets/Widget/canUpdate.html">Widget.canUpdate</a>.</p>
+<p>Typically implementations return a newly created constellation of widgets
+that are configured with information from this widget's constructor and
+from the given <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a>.</p>
+<p>The given <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a> contains information about the location in the
+tree at which this widget is being built. For example, the context
+provides the set of inherited widgets for this location in the tree. A
+given widget might be built with multiple different <a href="https://api.flutter.dev/flutter/widgets/BuildContext-class.html">BuildContext</a>
+arguments over time if the widget is moved around the tree or if the
+widget is inserted into the tree in multiple places at once.</p>
+<p>The implementation of this method must only depend on:</p>
+<ul>
+<li>the fields of the widget, which themselves must not change over time,
+and</li>
+<li>any ambient state obtained from the <code>context</code> using
+<a href="https://api.flutter.dev/flutter/widgets/BuildContext/dependOnInheritedWidgetOfExactType.html">BuildContext.dependOnInheritedWidgetOfExactType</a>.</li>
+</ul>
+<p>If a widget's <a href="../../screens_explore_screen/FeedScreen/build.html">build</a> method is to depend on anything else, use a
+<a href="https://api.flutter.dev/flutter/widgets/StatefulWidget-class.html">StatefulWidget</a> instead.</p>
+<p>See also:</p>
+<ul>
+<li><a href="https://api.flutter.dev/flutter/widgets/StatelessWidget-class.html">StatelessWidget</a>, which contains the discussion on performance considerations.</li>
+</ul>
+</section>
+
+
+    
+<section class="summary source-code" id="source">
+  <h2><span>Implementation</span></h2>
+  <pre class="language-dart"><code class="language-dart">@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    body: ListView.builder(
+      itemCount: 6,
+      itemBuilder: (context, index) {
+        &#47;&#47; Atribuir imagens e descrições postagem
+        String profileImage;
+        String postImage;
+        String description;
+        String username;
+        &#47;&#47;person_tiffani.jpeg  person_stef.jpeg person_sandra.jpeg
+        &#47;&#47;person_ray.jpeg person_manda.png person_kevin.jpeg
+        switch (index) {
+          case 0:
+            profileImage = &#39;assets&#47;profile_pics&#47;person_tiffani.jpeg&#39;;
+            postImage =
+                &#39;https:&#47;&#47;th.bing.com&#47;th&#47;id&#47;OIP.CqzUsGwt2s1Ov3vHCo5qFwHaFj?rs=1&amp;pid=ImgDetMain&#39;;
+            description = &#39;adorei a partida de voley com a galera hoje!&#39;;
+            username = &#39;Tiffani Almeida&#39;;
+            break;
+          case 1:
+            profileImage = &#39;assets&#47;profile_pics&#47;person_cesare.jpeg&#39;;
+            postImage =
+                &#39;https:&#47;&#47;th.bing.com&#47;th&#47;id&#47;OIP.T-dDrn0gbpDq8SFaaE5PBwHaE7?w=264&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7&#39;;
+            description = &#39;Pedalando pela vida: Liberdade sobre duas rodas!&#39; +
+                &#39; #AmoPedalar #VidaAtiva&#39;;
+            username = &#39;Dino Maia&#39;;
+            break;
+
+          case 2:
+            profileImage = &#39;assets&#47;profile_pics&#47;person_crispy.png&#39;;
+            postImage =
+                &#39;https:&#47;&#47;th.bing.com&#47;th&#47;id&#47;OIP.GLrZXdg0KVpxjMe8tye4jAHaE8?w=301&amp;h=201&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7&#39;;
+            description = &#39;Na quadra e no coração: a paixão pelo futsal&#39; +
+                &#39; não tem limites! ⚽️💪 #FutsalLovers #VivaOFutsal&#39;;
+            username = &#39;Fernando Silva &#39;;
+            break;
+          case 3:
+            profileImage = &#39;assets&#47;profile_pics&#47;person_katz.jpeg&#39;;
+            postImage =
+                &#39;https:&#47;&#47;th.bing.com&#47;th&#47;id&#47;OIP.lp35DysVC994vKUfXKIo9QHaE1?w=300&amp;h=197&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7&#39;;
+            description =
+                &#39;Campeonato realizado ontem + diversão com os amigos.&#39;;
+            username = &#39;Katz Almeida&#39;;
+            break;
+          case 4:
+            profileImage = &#39;assets&#47;profile_pics&#47;person_kevin.jpeg&#39;;
+            postImage =
+                &#39;https:&#47;&#47;th.bing.com&#47;th&#47;id&#47;R.459d10b64fa8adc8f4d22b2c7455a671?rik=PfaUEqZ1Hnhgzg&amp;pid=ImgRaw&amp;r=0&#39;;
+            description = &#39;caminhada intensa, percurso realizado com sucesso&#39;;
+            username = &#39;Ciro Romero&#39;;
+            break;
+
+          case 5:
+            profileImage = &#39;assets&#47;profile_pics&#47;person_stef.jpeg&#39;;
+            postImage =
+                &#39;https:&#47;&#47;th.bing.com&#47;th&#47;id&#47;R.000b0859518645353b9840c780ac57b4?rik=a98aNWBdF5iYNA&amp;riu=http%3a%2f%2f1.bp.blogspot.com%2f-iYKf3T5OhaQ%2fTkQdqBy8hrI%2fAAAAAAAAACg%2f_TtOc8oZJ_E%2fs1600%2fnatacao-.png&amp;ehk=vrEafAjh%2b9Xt7FzzH9iFsFRa7TKseHo390AYsyBqXU8%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0&#39;;
+            description = &#39;Natação é a minha paixão. Feliz por encontrar&#39; +
+                &#39;um grupo que me proporcionou voltar a nadar&#39;;
+            username = &#39;Stef&#39;;
+            break;
+          &#47;&#47; Adicione mais casos conforme necessário
+
+          default:
+            profileImage = &#39;assets&#47;profile_pics&#47;default_profile.png&#39;;
+            postImage =
+                &#39;https:&#47;&#47;th.bing.com&#47;th&#47;id&#47;OIP.DC1hBV48Vz3CqMGzmxSljgHaE7?w=244&amp;h=180&amp;c=7&amp;r=0&amp;o=5&amp;pid=1.7&#39;;
+            description = &#39;Sportzy Profille&#39;;
+            username = &#39;Default7&#39;;
+        }
+
+        return PostCard(
+          index: index,
+          profileImage: profileImage,
+          postImage: postImage,
+          description: description,
+          username: username,
+          nome: username,
+          image: postImage,
+        );
+      },
+    ),
+  );
+}</code></pre>
+</section>
+
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-left" class="sidebar sidebar-offcanvas-left">
+    <!-- The search input and breadcrumbs below are only responsively visible at low resolutions. -->
+<header id="header-search-sidebar" class="hidden-l">
+  <form class="search-sidebar" role="search">
+    <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+    <li><a href="../../index.html">Sportzy</a></li>
+    <li><a href="../../screens_explore_screen/screens_explore_screen-library.html">explore_screen</a></li>
+    <li><a href="../../screens_explore_screen/FeedScreen-class.html">FeedScreen</a></li>
+    <li class="self-crumb">build method</li>
+</ol>
+
+
+    <h5>FeedScreen class</h5>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div id="dartdoc-sidebar-right" class="sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    Sportzy
+      1.0.0+2
+  </span>
+
+  
+</footer>
+
+
+
+<script src="../../static-assets/highlight.pack.js?v1"></script>
+<script src="../../static-assets/docs.dart.js"></script>
+
+
+
+</body>
+
+</html>
+
