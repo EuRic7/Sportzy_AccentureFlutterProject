@@ -1,16 +1,9 @@
-# Simple Login App
+# Sportzy App
 
-A new Flutter project.
+## Descrição
+Este repositório contém o código fonte de um aplicativo para comunidade esportiva. A aplicação oferece recursos como fóruns temáticos, criação de tópicos, exploração de arenas, partidas e serviços relacionados ao esporte.
 
-## Getting Started
+## Estrutura do Projeto
+O projeto está organizado em diversos arquivos, cada um responsável por uma parte específica da aplicação. A documentação completa está disponível no diretório /doc/api/. Para acessar a documentação, abra o arquivo index.html no seu navegador favorito.
+.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
