@@ -6,6 +6,6 @@ A aplicação oferece recursos como comuns em redes sociais:
 criação de postagens, interação entre usuários, além de criação de partidas públicas, ofetas de serviços diversos relacionados a prática de esportes.
 
 ## Documentação e Estrutura do Projeto
-O projeto está organizado em diversos arquivos, cada um responsável por uma parte específica da aplicação. A documentação completa está disponível no diretório [/doc/api](/https://github.com/EuRic7/Sportzy_AccentureFlutterProject/tree/main/doc/api) . Para acessar a documentação, abra o arquivo index.html no seu navegador favorito.
+O projeto está organizado em diversos arquivos, cada um responsável por uma parte específica da aplicação. A documentação completa está disponível no diretório [/doc/api](/doc/api) . Para acessar a documentação, abra o arquivo index.html no seu navegador favorito.
 
 
